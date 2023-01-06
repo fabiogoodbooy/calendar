@@ -1,0 +1,29 @@
+
+@media (max-width: 600px) {
+    .calendar {
+      display: flex; /* Use a vertical layout on small screens */
+      flex-direction: column;
+    }
+  
+  }
+  
+  @media (min-width: 601px) {
+    .calendar {
+      display: grid; /* Use a grid layout on large screens */
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  }
+
+
+.calendar{
+    position: relative; /* Required to position the events */
+    
+    }
+.event{
+    position: absolute; /* Required to position the events */
+  border: 1px solid ; /* Add a border to the event */
+  background-color: #ffc107; /* Add a background color to the event */
+  text-align: center; /* Center the event id */
+  font-size: 12px; /* Set the font size for the event id */
+  padding: 2px; /* Add padding to the event */
+}
